@@ -55,7 +55,8 @@ ROOT_URLCONF = 'myweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/leaf/').replace('\\', '/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +68,10 @@ TEMPLATES = [
         },
     },
 ]
+# Template dir
+TEMPLATES_DIRS = (
+    os.path.join(BASE_DIR, 'templayes/west/'),
+)
 
 WSGI_APPLICATION = 'myweb.wsgi.application'
 
