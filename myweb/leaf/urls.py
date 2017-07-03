@@ -9,5 +9,7 @@ urlpatterns = [ # 1.11.2 去掉patteerns
     url(r'^$', views.first_page, name='first_page'),
     url(r'^staff', views.staff, name='staff'),
     url(r'^templay', views.templay, name='templay'),
+    url(r'^form', views.form, name='form'),
+    url(r'^investigate', views.investigate, name='investigate'),
     #url(r'^$', 包名.first_page, name='first_page'),
 ]
