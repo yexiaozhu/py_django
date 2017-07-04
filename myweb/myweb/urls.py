@@ -18,10 +18,10 @@ from django.contrib import admin
 
 from . import views
 
-admin.autodiscover()
+admin.autodiscover() # admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)), # admin
     url(r'^$', views.first_page, name='first_page'),
     url(r'^leaf/', include('leaf.urls')),
 ]

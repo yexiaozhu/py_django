@@ -6,4 +6,7 @@ V2.7.12</br>
 在Django 1.9及未来的版本种使用migrate代替syscdb</br>
 python manage.py makemigrations</br>
 python manage.py migrate</br>
+python manage.py createsuperuser</br>
+删除pyc文件 find /dir -name "*.pyc" | xargs -rm -rf</br>
+
 
